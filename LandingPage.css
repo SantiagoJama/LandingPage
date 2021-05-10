@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+/* 
+Aclaración importante:
+
+    Desarrollado por; Santiago Jama, como solución a los proyectos 
+    propuestos en el curso llevado a cabo en FreeCodeCamp. 
+
+    Los diseños pertenecen a la organización FreeCodeCamp. 
+    FreeCodeCamp provee los diseños como muestra, según los requerimientos (user stories) de los proyectos.
+
+    Todo el HTML y el CSS es de mi autoría.
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+body{
+    background-color: #DCE3E4;
+}
+
+#main-container{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-rows: .1fr .5fr .1fr;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+    #header{
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: fixed;
+        background-color: #b6c6c9;;
+        width: 100%;
+        padding: 1em;
+        
+    }
+        .img-container {
+            width: 30em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+            #header-img{
+                width: 100%;
+                display: block;
+            }
+
+        #nav-bar{
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            .nav-link-container{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+            }
+            .nav-link-container>li{
+                padding-right: .6em;
+                
+            }
+                li>a{
+                    text-decoration: none;
+                    color: black;
+                }
+                li>a:hover{
+                    border-bottom: 2px solid black;
+                    
+                }
+                ul>li{
+                    list-style-type: none;
+                }
+
+#main-content{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#start{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+    #title{
+    }
+
+    #form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+        input[type=email],label{
+            padding: .5em;
+            width: 100%;
+        }
+
+        #submit{
+            font-size: 1.3rem;
+            margin-top: .5em;
+            width: 70%;
+            background-color: rgb(235, 203, 99);
+            padding: .6em;
+        }
+        #submit:hover{
+            background-color: rgb(228, 134, 58);
+            cursor: pointer;
+        }
+
+
+#features{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+    .container{
+        margin-top: 2em;
+        margin-bottom: 2em;
+        width: 50%;
+        display: flex;
+        flex-direction: row;      
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+        .icon{
+            width: 10%;
+            height: 70%;  
+        }
+            .icon>img{
+                max-width: 100%;
+                max-height: 100%;
+               
+                
+            }
+        .description{
+            width: 80%;
+        }
+        .description>p{
+            margin-top: .5em;
+            text-align: justify;
+            line-height: 180%;
+        }
+    
+
+  
+#video{
+    height: 20em;
+    width: 30em;
+    display: block;
+}
+
+
+
+
+#pricing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 65%;
+    height: 100%;
+}   
+    .pricing-container{
+        margin-top: 3em;
+        margin-bottom: 3em;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        border: 2px solid black;
+      
+    }
+    .pricing-container>h4,p,li{
+        text-align: center;
+        width: 100%;
+    }
+    .pricing-container>p,li{
+       margin-top: 1em;
+    }
+    h4{
+        background-color: hsla(0, 0%, 0%,73%);
+        color: white;
+        padding: 1em;
+    }
+
+    .btn{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 50%;
+        background-color: rgb(223, 159, 41);
+        font-size: 1.1rem;
+        padding: .6em;
+    }
+    .btn:hover{
+        background-color: rgb(228, 134, 58);
+        cursor: pointer;
+    }
+
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 0%,30%);
+}
+        .container-footer-nav{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .container-footer-nav>li{
+            padding-left: 2em;
+            padding-right: 2em;
+
+        }
+        .rights{
+            margin-right: 2em;
+        }
+
+@media (max-width: 750px){
+    .btn{
+        margin-top: 1em;
+        margin-bottom: 1em;
+        width: 90%;
+        background-color: rgb(223, 159, 41);
+        font-size: 1.1rem;
+        padding: .6em;
+    }
+    .pricing-container{
+        width: 70%;
+    }
+    .img-container {
+        width: 20em;
+        margin-right: 1.5em;
+        display: flex;
+        flex-direction: row;
+    
+    }
+   
+}

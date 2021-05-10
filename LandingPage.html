@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LandingPage.css">
+    <title>Lading Page</title>
+</head>
+<body>
+    <!--
+      
+    Aclaración importante:
+
+    Desarrollado por; Santiago Jama, como solución a los proyectos 
+    propuestos en el curso llevado a cabo en FreeCodeCamp. 
+
+    Los diseños pertenecen a la organización FreeCodeCamp. 
+    FreeCodeCamp provee los diseños como muestra, según los requerimientos (user stories) de los proyectos.
+
+    Todo el HTML y el CSS es de mi autoría.
+*
+    -->
+<main id="main-container"> 
+    <header id="header">
+        <div class="img-container">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Icono" id="header-img">
+        </div>
+        <nav id="nav-bar">
+            <ul class="nav-link-container">
+                <li><a href="#features" class="nav-link"><b>Features</b></a></li>
+                <li><a href="#demostration" class="nav-link"><b>How It Works</b></a></li>
+                <li><a href="#pricing" class="nav-link"><b>Pricing</b></a></li>
+            </ul>
+        </nav>
+    </header>
+     
+    <div id="main-content">
+        <section id="start">
+            <h1 id="title">Handcrafted, home-made masterpieces</h1>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
+                <label id="email-label">
+                    <input type="email" name="email" id="email" id="email-label" placeholder="Enter your email address">
+                </label> <br>
+                <input type="submit" value="Get Started" id="submit">
+            </form>
+        </section>
+
+        <section id="features">
+            <div class="container">
+                <div class="icon">
+                    <img src="https://image.flaticon.com/icons/png/512/305/305404.png" alt="icon">
+                </div>
+                <div class="description">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="icon">
+                    <img src="https://image.flaticon.com/icons/png/512/44/44266.png" alt="icon">
+                </div>
+                <div class="description">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="icon">
+                    <img src="https://image.flaticon.com/icons/png/512/710/710078.png" alt="icon">
+                </div>
+                <div class="description">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+       
+        <section id="demostration">
+                <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" id="video"></iframe>
+        </section>
+
+        <section id="pricing">
+            <div class="pricing-container">
+                <h4>TENOR TROMBONE</h4>
+                <p>$600</p>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="pricing-container">
+                <h4>BASS TROMBONE</h4>
+                <p>$900</p>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+            <div class="pricing-container">
+                <h4>VALVE TROMBONE</h4>
+                <p>$1200</p>
+                <ul>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum.</li>
+                    <li>Lorem ipsum dolor.</li>
+                </ul>
+                <button class="btn">Select</button>
+            </div>
+        </section>
+    </div>
+        <footer>
+            <nav class="footer-nav">
+                <ul class="container-footer-nav">
+                    <li><a href="#"><b>Privacy</b></a></li>
+                    <li><a href="#"><b>Terms</b></a></li>
+                    <li><a href="#"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+            <div class="rights">
+                <p>
+                    Copyright 2021, Original Trombones
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
